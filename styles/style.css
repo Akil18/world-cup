@@ -129,6 +129,28 @@ Top Banner styles
   overflow: hidden;
 }
 
+.flag-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10% 10% 0 10%;
+}
+
+.flag-img span {
+  font-weight: bold;
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.match-info h4 {
+  margin-bottom: 0;
+}
+
 .card-info {
   padding: 20px;
 }

@@ -1,0 +1,330 @@
+/*-----------------------------
+    Font
+-----------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap");
+
+/*-----------------------------
+    Common styles
+-----------------------------*/
+body {
+  width: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5;
+}
+
+main {
+  margin: 5% 10%;
+}
+
+.subtle-effects {
+  transition: transform 1s;
+}
+
+.subtle-effects:hover {
+  transform: scale(1.1);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*-----------------------------
+Top Banner styles
+-----------------------------*/
+.top-banner {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  background-color: #282828;
+  border-radius: 25px;
+  color: white;
+  margin-bottom: 10%;
+}
+
+.top-banner-info {
+  padding: 0 10%;
+  margin-left: 5%;
+}
+
+.top-banner-info h1 {
+  font-size: 64px;
+  margin: 0;
+}
+
+.link-btn {
+  border: none;
+  color: white;
+  background-color: #0099ff;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  transition: width 1s;
+}
+
+.link-btn:hover {
+  width: 100%;
+}
+
+.top-banner-img {
+  display: flex;
+  justify-content: center;
+}
+
+.top-banner-img img {
+  width: 80%;
+}
+
+/*-----------------------------
+    Mid Section styles
+-----------------------------*/
+.mid-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.side-bar {
+  width: 30%;
+}
+
+.side-bar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.selection-btn {
+  width: 80%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  background-color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+#selected {
+  background-color: #0099ff;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.featured-btn {
+  padding: 2px 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.article-details {
+  display: flex;
+  gap: 30px;
+}
+
+.article-details div {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+#view-all {
+  display: none;
+}
+
+#view-all button {
+  width: 100px;
+  background-color: #0099ff;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+/*-----------------------------
+    Footer Section
+-----------------------------*/
+footer {
+  background-color: black;
+  color: white;
+  padding: 8%;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid #333333;
+  margin-bottom: 5%;
+}
+
+.page-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.page-links a {
+  text-decoration: none;
+  color: white;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  padding: 0 42%;
+}
+
+.social-links i {
+  transform: scale(2);
+  color: white;
+}
+
+/*-----------------------------
+    Media Queries
+    -----------------------------*/
+
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  main {
+    margin: 5% 8%;
+  }
+
+  .top-banner {
+    margin-bottom: 5%;
+  }
+
+  .top-banner-info h1 {
+    font-size: 32px;
+  }
+
+  .top-banner-info p {
+    width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .mid-section {
+    flex-direction: column;
+  }
+
+  .side-bar {
+    width: 100%;
+  }
+
+  .side-bar div {
+    flex-direction: row;
+    background-color: #f5f5f5;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #view-all {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .page-links {
+    font-size: 12px;
+  }
+
+  .social-links {
+    padding: 0 35%;
+  }
+}
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+  main {
+    margin: 0 3%;
+  }
+
+  .top-banner {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .top-banner-info {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top-banner-info h1 {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .top-banner-info p {
+    width: 220px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .mid-section {
+    flex-direction: column;
+  }
+
+  .side-bar {
+    width: 100%;
+  }
+
+  .side-bar div {
+    background-color: #f5f5f5;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 10%;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .page-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-links {
+    padding: 0 25%;
+  }
+}
